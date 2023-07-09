@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Amira.Zrelli
+      changes:
+        - tagDatabase:
+            tag: version_1.0.0
+
+  - include:
+      file: 00001_create_table_account.sql
+      relativeToChangelogFile: true

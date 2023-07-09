@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: kataBank
+    datasource:
+        url: jdbc:postgresql://localhost:5434/kata
+        username: admin
+        password: admin
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+    liquibase:
+        change-log: classpath:database/changelog/changelog-master.yml
+
